@@ -1,0 +1,65 @@
+#calculatrice {
+  height: 70vh;
+  width: 80vh;
+  background: lightgray;
+  margin: auto;
+  margin-top: 5%;
+  padding: 30px 20px 30px 20px;
+}
+
+
+body {
+    background-image: url(/img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    height: auto !important;
+    max-height: 100px;
+    width: auto;
+    opacity: 0.5;
+}
+
+
+#haut {
+    background: lightslategrey;
+    height: 30%;
+    width: 100%;
+
+}
+
+#bas {
+    background: lightsteelblue;
+    height: 70%;
+    padding: 20px;
+}
+
+button {
+    width: 100%;
+    height: 18%;
+    margin-top: 5%;
+}
+
+#ecran {
+    margin-right: 20px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+#screen {
+    opacity: 0.8;
+    font-family: 'Orbitron', sans-serif;
+    margin-right: 20px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: xx-large;
+}
+
+
+

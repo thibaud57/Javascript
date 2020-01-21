@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>Calculatrice</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container" id="calculatrice">
+
+
+        <!--Haut ecran-->
+        <div class="row mx-auto align-items-center" id="haut">
+
+            <div class="col-8 text-right h-50 ml-auto" id="ecran">
+                <form>
+                    <input type="text" id="screen" class="entry text-right" value="0" size="10" readonly>
+                </form>
+
+            </div>
+
+            <div class="col-3">
+                <img src="img/logo.png" alt="logo" class="img-fluid">
+            </div>
+
+        </div>
+
+        <!--Bas pavé numérique-->
+        <div class="row mx-auto" id="bas">
+            <div class="col-3">
+                <button type="button" id="special" class="btn-danger" onclick="calculer('spe', 'CE')">CE</button>
+                <button type="button" id="num" class="btn-primary" value="7" onclick="calculer('num', 7)">7</button>
+                <button type="button" id="num" class="btn-primary" value="4" onclick="calculer('num', 4)">4</button>
+                <button type="button" id="num" class="btn-primary" value="1" onclick="calculer('num', 1)">1</button>
+                <button type="special" class="btn-light" value="-" onclick="calculer('neg','-')">(+/-)</button>
+            </div>
+            <div class="col-3">
+                <button type="button" id="special" class="btn-danger" onclick="calculer('spe', 'C')">C</button>
+                <button type="button" id="num" class="btn-primary" value="8" onclick="calculer('num', 8)">8</button>
+                <button type="button" id="num" class="btn-primary" value="5" onclick="calculer('num', 5)">5</button>
+                <button type="button" id="num" class="btn-primary" value="2" onclick="calculer('num', 2)">2</button>
+                <button type="button" id="num" class="btn-primary" value="0" onclick="calculer('num', 0)">0</button>
+            </div>
+            <div class="col-3">
+                <button type="button" id="special" class="btn-danger" onclick="calculer('spe', '->')">-></button>
+                <button type="button" id="num" class="btn-primary" value="9" onclick="calculer('num', 9)">9</button>
+                <button type="button" id="num" class="btn-primary" value="6" onclick="calculer('num', 6)">6</button>
+                <button type="button" id="num" class="btn-primary" value="3" onclick="calculer('num', 3)">3</button>
+                <button type="button" id="decimal" class="btn-light egal" value="."
+                    onclick="calculer('deci','.')">.</button>
+            </div>
+            <div class="col-3">
+                <button type="button" id="operator" class="btn-light div" value="/"
+                    onclick="calculer('ope','/')">/</button>
+                <button type="button" id="operator" class="btn-light fois" value="*"
+                    onclick="calculer('ope', '*')">X</button>
+                <button type="button" id="operator" class="btn-light moins" value="-"
+                    onclick="calculer('ope', '-')">-</button>
+                <button type="button" id="operator" class="btn-light plus" value="+"
+                    onclick="calculer('ope', '+')">+</button>
+                <button type="button" id="operator" class="btn-secondary egal" value="="
+                    onclick="calculer('egal', '=')">=</button>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Calculatrice-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
